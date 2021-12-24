@@ -6,7 +6,7 @@
 #    By: sel-jala <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/24 23:03:39 by sel-jala          #+#    #+#              #
-#    Updated: 2021/12/24 23:43:46 by sel-jala         ###   ########.fr        #
+#    Updated: 2021/12/25 00:10:14 by sel-jala         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ fclean: clean
 		/bin/rm -f $(NAME)
 
 bonus:	all $(OBJB)
-		ar rc s $(NAME) $(OBJB)
+		ar rcs $(NAME) $(OBJB)
 
 %.o: %.c $(INCLUDE)
 		gcc $(FLG) -c $< -I $(INCLUDE)
